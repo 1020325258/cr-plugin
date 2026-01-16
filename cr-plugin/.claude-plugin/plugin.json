@@ -6,32 +6,12 @@
     "name": "11来了"
   },
   "commands": [
-    {
-      "name": "hello",
-      "description": "向用户发送个性化的问候消息",
-      "instructions": "../commands/hello.md"
-    }
+      "../commands/hello.md"
   ],
   "skills": [
-    {
-      "name": "code-review",
-      "description": "基础代码审查技能",
-      "instructions": "../code-review/SKILL.md"
-    },
-    {
-      "name": "code-review-with-rules",
-      "description": "基于自定义规范的代码审查",
-      "instructions": "../skills/code-review-with-rules/SKILL.md"
-    },
-    {
-      "name": "contract-cr",
-      "description": "合同代码审查",
-      "instructions": "../skills/contract-cr/SKILL.md"
-    },
-    {
-      "name": "explaining-code",
-      "description": "代码解释说明",
-      "instructions": "../skills/explaining-code/SKILL.md"
-    }
+      "../code-review/SKILL.md",
+      "../skills/code-review-with-rules/SKILL.md",
+      "../skills/contract-cr/SKILL.md",
+      "../skills/explaining-code/SKILL.md"
   ]
 }
