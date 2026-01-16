@@ -4,6 +4,12 @@
   "version": "1.0.0",
   "author": {
     "name": "11来了"
-  }
+  },
+  "commands": [
+    "./commands/cr.md"
+  ],
+  "skills": [
+    "./skills/contract-cr"
+  ]
   
 }

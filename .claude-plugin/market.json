@@ -1,0 +1,13 @@
+{
+    "name": "sales-project-marketplace",
+    "owner": {
+        "name": "HOME RD"
+    },
+    "plugins": [
+        {
+            "name": "cr-plugin",
+            "source": "./cr-plugin",
+            "description": "CR 管理插件"
+        }
+    ]
+}
