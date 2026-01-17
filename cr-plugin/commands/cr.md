@@ -1,15 +1,18 @@
 ---
-description: 对代码进行专业的 Code Review
+description: 自动对当前分支修改的代码进行 CR 检查，使用 contract-cr Skill。
+allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git branch:*), Read, Grep, Glob
 ---
 
-# Code Review 命令
+## 当前分支信息
+- 当前分支：!`git branch --show-current`
+- 状态：!`git status --porcelain`
+- diff（当前修改和 HEAD 的差异）：!`git diff HEAD`
 
-对 "$ARGUMENTS" 中指定的代码文件或代码片段进行全面的 Code Review,从以下方面进行审查:
+## 任务
+使用我的 **contract-cr** Skill 自动审查以上 diff 中的改动。
 
-1. **代码质量**: 检查代码的可读性、可维护性和代码风格是否符合最佳实践
-2. **潜在问题**: 识别可能的 bug、逻辑错误、边界条件处理不当等问题
-3. **性能优化**: 发现性能瓶颈和优化建议
-4. **安全性**: 检查常见安全漏洞,如 SQL 注入、XSS、CSRF 等
-5. **最佳实践**: 建议更符合行业标准和设计模式的实现方式
-
-请提供详细、具体、可执行的改进建议,并解释每个问题的原因和影响。
+输出格式：
+1. 风险改动的简短摘要
+2. 问题清单（问题严重程度：blocker/major/minor）
+3. 基于 diff 的具体建议，指出修改的文件和行号范围
+4. 如果需要更多上下文，请明确列出你需要打开的文件（避免广泛扫描）。
