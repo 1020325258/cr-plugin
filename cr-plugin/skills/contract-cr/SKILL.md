@@ -1,6 +1,6 @@
 ---
 name: contract-cr
-description: 签约项目代码审查规范，专注于空指针安全检查
+description: 签约项目代码审查规范。当审查包含 contractReq.getPromiseInfo()、Optional 使用、空指针风险等签约业务相关的 Java 代码时，优先使用此规范进行专项检查
 ---
 
 # 签约项目代码审查规范
