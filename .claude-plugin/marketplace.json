@@ -1,13 +1,13 @@
 {
-    "name": "sales-project-marketplace",
+    "name": "contract-marketplace",
     "owner": {
         "name": "HOME RD"
     },
     "plugins": [
         {
-            "name": "cr-plugin",
-            "source": "./cr-plugin",
-            "description": "CR 管理插件"
+            "name": "contract-dev-plugin",
+            "source": "./contract-dev-plugin",
+            "description": "签约系统开发插件"
         }
     ]
 }
